@@ -1,9 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-# Create your views here.
-def index(request):
-    return HttpResponse("<h1>My first django project</h1>")
+def home_view(request):
+    return render(request, 'main/home.html')
 
-def new(request):
-    return HttpResponse("<h1>My second django project</h1>")
+def data_view(request):
+    return render(request, 'main/data.html')
+
+def test_view(request):
+    return render(request, 'main/test.html')
+
+def about_view(request):
+    return render(request, 'main/about.html')

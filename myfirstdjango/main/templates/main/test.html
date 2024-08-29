@@ -1,0 +1,42 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Test{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="p-5 mb-4 bg-warning text-dark rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Снаряжение для Каякинга</h1>
+            <p class="col-md-8 fs-4">Выбор правильного снаряжения для каякинга — залог успешного и безопасного
+                путешествия.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-canoe"></i> Каяк</h5>
+                    <p class="card-text">Выберите каяк в зависимости от типа воды: спокойные озера, реки или море.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-person-lines-fill"></i> Жилет безопасности</h5>
+                    <p class="card-text">Жилет безопасности обеспечит вашу безопасность в любой ситуации на воде.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm border-0">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="bi bi-water"></i> Водонепроницаемая сумка</h5>
+                    <p class="card-text">Для защиты ваших личных вещей от воды используйте водонепроницаемую сумку.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

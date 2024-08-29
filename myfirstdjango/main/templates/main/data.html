@@ -1,0 +1,62 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Data{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="p-5 mb-4 bg-success text-white rounded-3"
+         style="background-image: url('{% static 'main/img/data_main.jpg' %}'); background-size: cover; background-position: center;">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Лучшие Места для Каякинга</h1>
+            <p class="col-md-8 fs-4">Откройте для себя самые живописные и захватывающие маршруты для каякинга по всему
+                миру.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <h2 class="text-primary">Топ Мест для Каякинга</h2>
+            <ul class="list-group shadow-sm">
+                <li class="list-group-item list-group-item-action list-group-item-primary">Фьорды Норвегии</li>
+                <li class="list-group-item list-group-item-action list-group-item-secondary">Река Колорадо, США</li>
+                <li class="list-group-item list-group-item-action list-group-item-success">Бухта Халонг, Вьетнам</li>
+                <li class="list-group-item list-group-item-action list-group-item-danger">Озеро Байкал, Россия</li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <h2 class="text-primary">Галерея</h2>
+            <div class="d-flex flex-wrap">
+                <img src="{% static 'main/img/data_1.jpg' %}" class="img-thumbnail m-1" alt="Norwegian Fjords">
+                <img src="{% static 'main/img/data_2.jpg' %}" class="img-thumbnail m-1" alt="Colorado River">
+                <img src="{% static 'main/img/data_4.jpg' %}" class="img-thumbnail m-1" alt="Ha Long Bay">
+                <img src="{% static 'main/img/data_3.jpg' %}" class="img-thumbnail m-1" alt="Lake Baikal">
+            </div>
+        </div>
+    </div>
+
+    <section class="mt-5">
+        <h2 class="text-success">Советы по Каякингу</h2>
+        <div class="card-deck">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Подготовьтесь к Путешествию</h5>
+                    <p class="card-text">Проверьте свое снаряжение перед выходом на воду и изучите погодные условия.</p>
+                </div>
+            </div>
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Безопасность Прежде Всего</h5>
+                    <p class="card-text">Всегда надевайте спасательный жилет и следуйте местным правилам.</p>
+                </div>
+            </div>
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Уважайте Природу</h5>
+                    <p class="card-text">Соблюдайте экологические нормы, не мусорьте и защищайте местные экосистемы.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}

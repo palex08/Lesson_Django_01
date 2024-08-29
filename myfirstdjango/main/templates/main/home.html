@@ -1,0 +1,53 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="p-5 mb-4 bg-primary text-white rounded-3">
+
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">Каякинг: Погружение в Мир Водных Приключений</h1>
+            <p class="col-md-8 fs-4">Каякинг — это увлекательное занятие, которое сочетает в себе физическую активность,
+                приключения и возможность насладиться природой.</p>
+            <a class="btn btn-outline-light btn-lg" href="{% url 'about' %}" role="button">Узнать больше</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="{% static 'main/img/home_1.jpg' %}" class="card-img-top" alt="Kayaking adventure">
+                <div class="card-body">
+                    <h5 class="card-title">Исследуй Природу</h5>
+                    <p class="card-text">Каякинг позволяет исследовать водные пути, недоступные для других видов
+                        транспорта.</p>
+                    <a href="{% url 'data' %}" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="{% static 'main/img/home_2.jpg' %}" class="card-img-top" alt="Kayaking gear">
+                <div class="card-body">
+                    <h5 class="card-title">Оборудование для Каякинга</h5>
+                    <p class="card-text">Узнайте о лучших снаряжениях для различных условий и уровней подготовки.</p>
+                    <a href="{% url 'test' %}" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <img src="{% static 'main/img/home_3.jpg' %}" class="card-img-top" alt="Kayaking community">
+                <div class="card-body">
+                    <h5 class="card-title">Сообщество Каякеров</h5>
+                    <p class="card-text">Присоединяйтесь к сообществу каякеров и делитесь своим опытом и
+                        приключениями.</p>
+                    <a href="{% url 'about' %}" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
